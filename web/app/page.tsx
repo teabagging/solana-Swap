@@ -22,7 +22,7 @@ function Page() {
         strictTokenList: false,
         defaultExplorer: "SolanaFM",
         formProps: {
-          initialAmount: "100000",
+          initialAmount: "10000000000",
           initialInputMint: "So11111111111111111111111111111111111111112",
           initialOutputMint: "ArXETDYEcKmPWTN7CbLtAtw3bruJbrtwb3FD1RnvXFuf",
         },
