@@ -1,50 +1,31 @@
-# jupiter-swap
+jupiter-swap
+An implementation of the Jupiter Swap - here's a video walkthrough of all this code: Integrate Jupiter Swap in 15 minutes
 
-This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
+Jupiter Terminal vs API Jupiter Terminal is a UI that you can plug into your app by linking it in your HTML. The API is uses Jupiter's quote and swap endpoints and requires you build your own front-end/UI.
 
-## Getting Started
+Usage
+The code in this repo is a reference imeplementation, it's not built for direct usage.
 
-### Prerequisites
+Get an API key from Helius - https://www.helius.dev/
+Add your key to the the HTML OR create-solana-dapp implementation
+For create-solana-dapp, you'll need NPM. The swap implementation is at localhost:3000/swap
+I recommend watching the video linked above to get an idea of the layout of the code and how the Jupiter swap API works.
 
-- Node v18.18.0 or higher
+HTML
+Plain HTML file that imports the terminal via CDN.
 
-### Installation
+Create-solana-dapp
+Uses the create-solana-dapp template to create a new project, then imports the terminal via CDN.
 
-#### Clone the repo
+Setup
+Run these in your terminal:
 
-```shell
-git clone <repo-url>
-cd <repo-name>
-```
-
-#### Install Dependencies
-
-```shell
-npm run install
-```
-
-#### Start the web app
-
-```
+git clone https://github.com/AlmostEfficient/jupiter-swap/
+cd create-solana-dapp
+cd web
+npm i
 npm run dev
-```
+Open localhost:3000 in your browser. The swap is at localhost:3000/swap
 
-## Apps
-
-### web
-
-This is a React app.
-
-#### Commands
-
-Start the web app
-
-```shell
-npm run dev
-```
-
-Build the web app
-
-```shell
-npm run build
-```
+API Implementation
+The API implementation is at create-solana-dapp/web/app/swap/page.tsx. It's configured to only have 4 assets - USDC, SOL, BONK, WIF. You'll need to add your own token mint addresses, or you can use the token list API for validated tokens.
