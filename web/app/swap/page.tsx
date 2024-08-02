@@ -1,5 +1,5 @@
 'use client';
-
+import 'rpc-websockets/dist/lib/client';
 import styles from './swap.module.css';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { VersionedTransaction, Connection } from '@solana/web3.js';
