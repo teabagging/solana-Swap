@@ -2,6 +2,7 @@ import { CSSProperties } from 'react';
 import { Root } from 'react-dom/client';
 import { createStore } from 'jotai';
 import { Wallet } from '@jup-ag/wallet-adapter';
+import 'rpc-websockets/dist/lib/client';
 import { PublicKey, TransactionError } from '@solana/web3.js';
 import { QuoteResponseMeta, SwapMode, SwapResult } from '@jup-ag/react-hook';
 import { WalletContextState } from '@jup-ag/wallet-adapter';

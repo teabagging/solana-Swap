@@ -1,5 +1,5 @@
 'use client';
-
+import 'rpc-websockets/dist/lib/client';
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { clusterApiUrl } from '@solana/web3.js';
 
