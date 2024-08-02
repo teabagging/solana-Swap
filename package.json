@@ -23,7 +23,7 @@
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rpc-websockets": "^7.11.2",
+    "rpc-websockets": "7.9.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
